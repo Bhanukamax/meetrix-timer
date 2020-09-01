@@ -59,11 +59,15 @@ export const Timer: React.FC<Props> = ({
       <TimeDisplay time={time} />
       <div>
         {isPlaying ? (
-          <Button onClick={() => pause()}>Pause</Button>
+          <Button onClick={() => pause()} type='secondary'>
+            Pause
+          </Button>
         ) : (
           <Button onClick={() => play()}>Play</Button>
         )}
-        <Button onClick={() => reset()}>Reset</Button>
+        <Button onClick={() => reset()} type='secondary'>
+          Reset
+        </Button>
       </div>
     </TimerFrame>
   );
