@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import TimeDisplay from './time-display';
+import Button from './button';
 
 const TimerFrame = styled.div`
   display: inline-block;
@@ -12,15 +13,6 @@ const TimerFrame = styled.div`
   box-shadow: 0px 0px 11px 2px #cecece;
   border-radius: 13px;
   align-items: center;
-`;
-
-const Button = styled.button`
-  padding: 20px;
-  border: none;
-  margin: 20px;
-  border-radius: 13px;
-  color: #fff;
-  background: #536dfe;
 `;
 
 interface Props {
